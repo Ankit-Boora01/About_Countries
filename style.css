@@ -1,0 +1,247 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+body{
+    --background-color: hsl(0, 0%, 98%);
+    --text-color: hsl(200, 15%, 8%);
+    --input: hsl(0, 0%, 52%);
+    --element: hsl(0, 0%, 100%);
+    background-color: var(--background-color);
+    color:var(--text-color);
+}
+
+body.dark{
+    --background-color: hsl(207, 26%, 17%);
+    --text-color: hsl(0, 0%, 100%);
+    --input: hsl(0, 0%, 52%);
+    --element: hsl(209, 23%, 22%);
+
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom:10px ;
+    background-color: var(--element);
+}
+
+#header-text{
+    font-weight: bolder;
+    font-size: xx-large;
+    padding-left: 20px;
+}
+
+#siteMode{
+    font-size: larger;
+    padding-right: 20px;
+    cursor: pointer;
+
+}
+
+.searchandfilter {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-top: 25px;
+}
+
+.SandFstyle {
+padding: 10px;
+font-size: larger;
+border-radius: 5px;
+cursor: pointer;
+border: none;
+}
+
+#searchBar {
+display: flex;
+align-items: center;
+padding-left: 20px;
+}
+
+#searchBar > button {
+border-radius: 5px 0 0 5px;
+padding: 10px 15px;
+background-color: var(--element);
+border: none;
+}
+
+#search {
+width: 350px;
+border-radius: 0 5px 5px 0;
+padding-left: 10px;
+border: none;
+outline: none;
+}
+#continent{
+margin-right: 20px;
+}
+
+main{
+display: flex;
+flex-wrap: wrap;
+margin: 20px;
+}
+
+#cards{
+background-color: var(--element);
+border-radius: 5px;
+margin: 30px;
+padding-bottom: 40px;
+transition: transform 0.3s ease;
+text-decoration: none;
+color: var(--text-color);
+}
+
+#cards:hover{
+cursor: pointer;
+transform:  scale(1.1);
+}
+
+#country-detials{
+text-align: left;
+padding-left: 20px;
+}
+
+#country-img{
+border-radius: 5px 5px 0 0;
+}
+
+#country{
+padding: 7px 0 7px 0;
+}
+
+#population,#region,#captial{
+font-weight: bold;
+}
+#pop-Count, #reg-Name, #cap-Name,#c-SubRegion,#c-Domain,#c-Currency,#c-Language, #c-NavtiveName, #c-Population
+,#c-Region,#c-CaptialName{
+font-weight: 100;
+}
+
+
+/*--------------------Country.css------------------*/
+
+#backBtn{
+    font-size: larger;
+    margin-left: 100px;
+    padding: 5px 15px 5px 15px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.392);
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text-color);
+
+}
+
+.countryInfo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.c-Info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.c-Img{
+    width: 425px;
+    height: 325px;
+}
+
+ .c-Img > img{
+    width: 100%;
+    
+}
+
+.Info2{
+    margin-top: 90px;
+    
+}
+
+#c-Borders {
+    margin-top: 40px;
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+#c-Borders> a {
+    line-height: 20px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: var(--element);
+    color: var(--text-color); 
+    padding: 4px 10px 4px 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.392);
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 376px) {
+    header, main, footer {
+        padding: 20px;
+    }
+
+    .searchandfilter {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #search {
+        width: 300px;
+    }
+
+    #continent {
+        margin-left: -120px;
+        margin-top: 35px;
+    }
+
+    #header-text {
+        font-size: large;
+        padding-left: 0px;
+    }
+
+    main {
+        margin: 5px;
+    }
+
+    .countryInfo {
+        margin-left: 0px;
+    }
+
+    #c-Borders {
+        justify-content: flex-start; /* Keep border countries left-aligned */
+        flex-wrap: wrap; /* Allow wrapping for additional items */
+       
+    }
+
+    .Info2 {
+        margin-top: -10px;
+    }
+    #backBtn{
+       
+        margin-left: 30px;
+        
+    }
+    .c-Img{
+        width: 325px;
+        height: 255px;
+    }
+}

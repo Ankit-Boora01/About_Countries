@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Countries rest Api</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <p id="header-text">What is in World?</p>
+        <p id="siteMode"> <i id="site-Mode-Icon" class="fa-regular fa-moon">&nbsp;&nbsp;</i>Dark Mode</p>
+    </header>
+    <div class="searchandfilter">
+        <form  id="searchBar" onsubmit="searchName(); return false;" >
+            <button class="SandFstyle" style="background-color: white;" ><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input class="SandFstyle" type="search" id="search" placeholder="Search for a country..">
+    </form>
+    <select class="SandFstyle" id="continent">
+        <option value="" disabled selected>Select a continent</option>
+        <option value="africa">Africa</option>
+        <option value="antarctica">Antarctica</option>
+        <option value="asia">Asia</option>
+        <option value="europe">Europe</option>
+        <option value="north-america">North America</option>
+        <option value="south-america">South America</option>
+        <option value="australia">Australia</option>
+    </select>
+     </div>
+     <main>
+
+     </main>
+
+     <script src="JavaScript.js"> </script>
+     <script src="theme.js"></script>
+
+        
+    
+</body>
+</html>

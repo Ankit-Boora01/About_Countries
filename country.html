@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Country Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <p id="header-text">What is in World?</p>
+        <p id="siteMode"> <i id="site-Mode-Icon" class="fa-regular fa-moon">&nbsp;&nbsp;</i>Dark Mode</p>
+    </header><br><br>
+    <a id="backBtn" onclick="history.back()"><i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;Back</a>
+    <main>
+        <div class="countryInfo">
+            <div class="c-Img">
+                <img id="country-img" src="" >
+            </div>
+            <div class="c-Info">
+                <h1 id="country-name">Country</h1><br>
+                <strong>Native Name: <span id="c-NavtiveName"></span></strong>
+                <strong>Population: <span id="c-Population">No Population Found!</span></strong>
+                <strong>Region: <span id="c-Region">No Region Found!</span></strong>
+                <strong>Sub-Region: <span id="c-SubRegion">No Sub-Region Found!</span></strong>
+                <strong>Capital: <span id="c-CaptialName">No Capital Found!</span></strong>
+                <div id="c-Borders">
+                    <strong id="boldBorder">Border Countries: <br></strong>
+                </div>
+            </div>
+
+            <div class="c-Info Info2">
+                <strong>Top Level Domain: <span id="c-Domain">No Domain Found!</span></strong>
+                <strong>Currencies: <span id="c-Currency">No Currency Found!</span></strong>
+                <strong>Language: <span id="c-Language">No Language Found!</span></strong>
+            </div>
+        </div>
+    </main>
+    <script src="jsCountry.js"> </script>
+    <script src="theme.js"></script>
+
+</body>
+</html>
